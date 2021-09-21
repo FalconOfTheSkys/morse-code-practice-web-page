@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse-code Practice</title>
+    <script src="script/script.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div id="main-body">
+        <h1 id="main-header">Practice Morse Code</h1>
+        <br>
+        <div id="main-btn">
+            <button id="btn-main-start" onclick="start()">Start</button>
+        </div>
+    </div>
+    <div id="practice-body" hidden=true>
+        <h2 id="practice-header">Practice</h2>
+        <div id="practice-box">
+            <h3 id="practice-box-q"></h3>
+            <br>
+            <div id="practice-box-a">
+                <input id="practice-box-a-elm" type="text">
+            </div>
+        </div>
+        <br>
+        <div id="practice-btn">
+            <button id="practice-cancel" onclick="cancel()">Cancel</button>
+            <button id="practice-submit" type="submit" onclick="submit()">Submit</button>
+        </div>
+    </div>
+    <div id="post-practice" hidden=true>
+        <div id="result-box">
+            <h3 id="result-title"></h3>
+            <div id="result-btn">
+                <button id="result-homepage" onclick="cancel()">Homepage</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
