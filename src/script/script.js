@@ -41,7 +41,7 @@ function start() {
     let question = document.getElementById("practice-box-q");
 
     //Change inner HTML
-    question.innerHTML = "What is the morse for, "+key;
+    question.innerHTML = "What is " + key + " in morse?";
 
     
     
@@ -63,14 +63,24 @@ function submit() {
     result_body.hidden = false;
 
     if(answer==map.get(key)){
-        result_title.innerHTML = "Correct. It was "+map.get(key);
+        result_title.innerHTML = "Correct, it is: "+map.get(key);
     }else{
-        result_title.innerHTML = "Incorrect. Correct: "+map.get(key);
+        result_title.innerHTML = "Incorrect, it was: "+map.get(key);
     }
 
 
 }
 
+function Chart() {
+    let main_body = document.getElementById("main-body");
+    let practice_body = document.getElementById("practice-body");
+    let result_body = document.getElementById("post-practice");
+    let chart_body = document.getElementById("chart-body");
+    main_body.hidden = true;
+    practice_body.hidden = true;
+    result_body.hidden = true;
+    chart_body.hidden = false;
+}
 
 
 // returns random key from Set or Map
