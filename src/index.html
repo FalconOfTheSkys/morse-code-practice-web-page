@@ -13,30 +13,47 @@
         <h1 id="main-header">Practice Morse Code</h1>
         <br>
         <div id="main-btn">
-            <button id="btn-main-start" onclick="start()">Start</button>
+            <button id="btn-main-start" onclick="start()">Quiz</button>
+            <button id="btn-main-chart" onclick="Chart()">Chart</button>
         </div>
     </div>
+    
     <div id="practice-body" hidden=true>
-        <h2 id="practice-header">Practice</h2>
+        <br>
+        <br>
         <div id="practice-box">
             <h3 id="practice-box-q"></h3>
             <br>
             <div id="practice-box-a">
-                <input id="practice-box-a-elm" type="text">
+                <input id="practice-box-a-elm" type="search" autocomplete="off">
             </div>
+            <br>
+              <div id="practice-btn">
+                <button id="practice-cancel" onclick="cancel()">Cancel</button>
+                <button id="practice-submit" type="submit" onclick="submit()">Submit</button>
+             </div>
         </div>
         <br>
-        <div id="practice-btn">
-            <button id="practice-cancel" onclick="cancel()">Cancel</button>
-            <button id="practice-submit" type="submit" onclick="submit()">Submit</button>
-        </div>
+        <br>
     </div>
     <div id="post-practice" hidden=true>
         <div id="result-box">
             <h3 id="result-title"></h3>
             <div id="result-btn">
-                <button id="result-homepage" onclick="cancel()">Homepage</button>
+                <button id="result-homepage" onclick="cancel()">Back</button>
             </div>
+        </div>
+    </div>
+    <div id="chart-body" hidden=true>
+        <div id="chart-body-chart">
+            <img id="chart-body-chart-img" src="https://cdn.discordapp.com/attachments/885469400239575043/890151150253408276/7368b695bbb97dfb1d61d6e262b28d6f.png" alt="chart-img">
+        </div>
+        <div id="source-of-img">
+            <a href="https://in.pinterest.com/pin/569916527843546581/">Source</a>
+        </div>
+        <br>
+        <div id="chart-body-back-btn">
+            <button id="chart-body-back-btn-elm" onclick="cancel()">Back</button>
         </div>
     </div>
 </body>
