@@ -4,8 +4,43 @@
     text-align: center;
 }
 
-#practice-header {
-    font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+#btn-main-start {
+    height: 50px;
+    width: 100px;
+    text-align: center;
+}
+
+#btn-main-chart {
+    height: 50px;
+    width: 100px;
+    text-align: center;
+}
+
+
+
+#practice-box-q {
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#practice-cancel {
+    display: inline;
+}
+
+#practice-submit {
+    display: inline;
+}
+
+#result-title {
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#result-box {
+    text-align: center;
+}
+
+#practice-box {
     text-align: center;
 }
